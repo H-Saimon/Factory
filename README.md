@@ -1,67 +1,103 @@
-# FabricaPessoaProject
+```markdown
+# 🏭 Factory
 
-## Descrição
+---
 
-O **FabricaPessoaProject** é um projeto Java que exemplifica a aplicação do padrão de projeto Factory para criação de objetos relacionados a pessoas. Através de uma estrutura organizada e modular, o sistema facilita a instância de diferentes tipos de objetos "Pessoa" sem expor a lógica de criação diretamente ao cliente, promovendo flexibilidade e manutenibilidade no código.
+## 📌 Descrição
 
-## Funcionalidades principais
+O **Factory** é um projeto desenvolvido para exemplificar e implementar o padrão de projeto *Factory* de forma robusta e escalável em Java. O objetivo principal é fornecer uma estrutura modular que facilite a criação de objetos sem expor a lógica de instanciação ao cliente, promovendo assim um código mais limpo, manutenível e extensível.
 
-- Implementação do padrão Factory para criação de objetos Pessoa.
-- Modularização clara entre criação e uso dos objetos.
-- Testes unitários utilizando JUnit para garantir a qualidade e estabilidade das classes.
-- Código fonte organizado para fácil manutenção e extensão.
+Este repositório contém uma implementação abrangente, acompanhada de testes automatizados, que pode ser utilizada como base para projetos acadêmicos, profissionais ou como referência para quem deseja compreender e aplicar o padrão Factory em seus códigos.
 
-## Tecnologias utilizadas
+---
 
-- Java (JDK 8 ou superior)
-- Maven (para gerenciamento de dependências e build)
-- JUnit 3.8.1 (para testes unitários)
+## 🚀 Tecnologias
 
-## Como instalar e executar
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)  
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)  
+![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
 
-1. **Pré-requisitos:**
-   - Java JDK 8 ou superior instalado.
-   - Maven instalado e configurado no PATH.
+- Java 11+  
+- Maven para gerenciamento de dependências e build  
+- JUnit para testes automatizados  
 
-2. **Clonar o repositório:**
+---
 
-```bash
-git clone <URL_DO_REPOSITORIO>
-cd FabricaPessoaProject
-```
+## ✨ Funcionalidades Principais
 
-3. **Compilar o projeto e rodar os testes:**
+- Implementação do padrão **Factory** para abstração da criação de objetos.  
+- Estrutura modular que permite fácil extensão e manutenção.  
+- Testes unitários para garantir a robustez e confiabilidade do código.  
+- Exemplo prático de uso do padrão em diferentes contextos.  
 
-```bash
-mvn clean install
-```
+---
 
-4. **Executar a aplicação:**
-
-Como o projeto gera um `.jar` (arquivo JAR) na pasta `target`, você pode executar a aplicação (caso possua classe main) com:
-
-```bash
-java -jar target/FabricaPessoaProject-1.0-SNAPSHOT.jar
-```
-
-*Obs.: Caso exista uma classe principal específica, substitua o comando conforme a necessidade.*
-
-## Estrutura do projeto
+## 📁 Estrutura de Pastas
 
 ```
-FabricaPessoaProject/
+Factory/
 │
-├── pom.xml                     # Arquivo de configuração do Maven
-├── src/
-│   ├── main/
-│   │   └── java/               # Código fonte principal
-│   └── test/
-│       └── java/               # Código dos testes unitários
-├── target/
-│   ├── classes/                # Classes compiladas
-│   └── FabricaPessoaProject-1.0-SNAPSHOT.jar  # Artefato gerado pelo build
+├── pom.xml              # Configurações do Maven e dependências
+├── README.md            # Documentação do projeto
+├── src/                 # Código-fonte do projeto
+│   ├── main/            # Código principal
+│   │   └── java/        # Pacotes e classes Java
+│   └── test/            # Testes automatizados
+│       └── java/        
+└── target/              # Build e arquivos compilados
+    └── classes/         # Classes compiladas
 ```
 
 ---
 
-Este projeto serve como base para estudos e implementação do padrão Factory em sistemas orientados a objetos escritos em Java.
+## ▶️ Como Executar o Projeto
+
+### Pré-requisitos
+
+- Java JDK 11 (ou superior) instalado e configurado no PATH  
+- Maven instalado e configurado no PATH  
+
+### Passos
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/H-Saimon/Factory.git
+   cd Factory
+   ```
+
+2. Compile o projeto com Maven:
+   ```bash
+   mvn clean compile
+   ```
+
+3. Execute os testes para verificar a integridade:
+   ```bash
+   mvn test
+   ```
+
+4. Para executar a aplicação (caso exista classe `Main`):
+   ```bash
+   mvn exec:java -Dexec.mainClass="com.seupacote.Main"
+   ```
+
+> **Nota:** Ajuste o path da classe principal conforme o pacote utilizado no projeto.
+
+---
+
+## 👤 Autor
+
+[Hítalon Saimon](https://github.com/H-Saimon)  
+Desenvolvedor Sênior | Entusiasta em padrões de projeto e software de alta qualidade.
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+<p align="center">
+  <em>Construa códigos limpos e reutilizáveis!</em> 🛠️
+</p>
+```
