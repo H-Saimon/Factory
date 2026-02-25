@@ -1,173 +1,135 @@
 # Factory
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apache-maven&logoColor=white)
-![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Issues](https://img.shields.io/github/issues/usuario/Factory?color=orange)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Language](https://img.shields.io/github/languages/top/usuario/Factory?color=yellow)
-![Build Status](https://img.shields.io/github/actions/workflow/status/usuario/Factory/maven.yml?branch=main&label=build)
+[![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)](https://www.oracle.com/java/) 
+[![Issues](https://img.shields.io/github/issues/username/Factory?style=for-the-badge)](https://github.com/username/Factory/issues) 
+[![License](https://img.shields.io/github/license/username/Factory?style=for-the-badge)](LICENSE)
+[![Last Commit](https://img.shields.io/github/last-commit/username/Factory?style=for-the-badge)](https://github.com/username/Factory/commits/main) 
+[![Status](https://img.shields.io/badge/status-em%20desenvolvimento-blue?style=for-the-badge)](#)
 
 ---
 
-## 📌 Descrição do Projeto
+## 📌 Descrição
 
-O **Factory** é um projeto desenvolvido para exemplificar e implementar o padrão de projeto *Factory* em Java, visando oferecer uma solução robusta, modular e escalável para criação de objetos. Este padrão é amplamente utilizado para desacoplar a lógica de instanciação das classes do código cliente, promovendo alto grau de manutenibilidade e extensibilidade.
+O **Factory** é um projeto desenvolvido para exemplificar e implementar o padrão de projeto *Factory* de forma robusta e escalável utilizando a linguagem Java. O objetivo principal é fornecer uma estrutura modular que abstrai a criação de objetos, desacoplando a lógica de instanciação do cliente, o que promove um código mais limpo, fácil de manter e com alto potencial para extensão futura.
 
-Este repositório apresenta uma implementação didática e profissional do padrão Factory, contemplando uma arquitetura limpa com separação clara entre responsabilidades, além de testes unitários automatizados. É indicado para estudantes, desenvolvedores que busquem referência de boas práticas em design patterns, e equipes de desenvolvimento que desejam incorporar fundamentos sólidos de arquitetura de software.
-
-Diferenciam-se neste projeto:
-
-- Implementação clara e modular do padrão Factory.
-- Aplicação de boas práticas Java 11+ e Maven para gerenciamento e build.
-- Cobertura de testes automatizados com JUnit 5.
-- Estruturação que facilita a extensão e manutenção futura.
+Este repositório é uma referência técnica tanto para profissionais de software quanto para estudantes e entusiastas que desejam entender na prática como aplicar o padrão *Factory* em projetos Java usando as melhores práticas, aliando organização, testes automatizados e gerenciamento de dependências via Maven.
 
 ---
 
 ## ⚙️ Funcionalidades
 
-- Implementação do padrão Factory para criação encapsulada de objetos.
-- Modularização do código para fácil adição de novos produtos/classes sem alterar código cliente.
-- Estrutura de testes unitários para garantir integridade da lógica de criação.
-- Configuração Maven para compilação, empacotamento e gerenciamento de dependências.
-- Exemplo prático de uso do padrão em código base.
+- Implementação concreta do padrão de projeto *Factory* para criação flexível de objetos.  
+- Estrutura modular dividida em código fonte principal e testes automatizados.  
+- Utilização do Maven para gerenciamento de dependências e construção do projeto.  
+- Suporte a testes unitários com JUnit 5 para garantir qualidade e estabilidade.  
+- Organização clara que pode ser expandida para diferentes variações do padrão Factory, como Factory Method ou Abstract Factory.  
+- Código legível e documentado para facilitar entendimento, manutenção e reaproveitamento.
 
 ---
 
 ## 🛠 Tecnologias Utilizadas
 
-- **Linguagem:** Java 11+
-- **Gerenciador de Build:** Apache Maven
-- **Framework de Testes:** JUnit 5
-- **Controle de Versão:** Git (GitHub)
-- **Ambiente de Execução:** JVM
+- **Linguagem:** Java 11+  
+- **Gerenciamento de Build:** Apache Maven  
+- **Testes:** JUnit 5  
+- **Padrões de Projeto:** Factory (padrão de criação de objetos)  
 
 ---
 
-## 📁 Estrutura de Diretórios
+## 📂 Estrutura do Projeto
 
 ```
-Factory/
-├── README.md                  # Documentação principal do projeto
-├── pom.xml                   # Configurações do Maven e dependências
+/home/ubuntu/repos/Factory/
+├── README.md           # Documentação geral do projeto
+├── pom.xml             # Configuração do Maven para build e dependências
 ├── src/
-│   ├── main/                 # Código-fonte principal (implementação do padrão Factory)
-│   └── test/                 # Testes unitários, integrados e mocks (JUnit 5)
-└── target/
-    └── classes/              # Classes compiladas e artefatos gerados pelo Maven
+│   ├── main/           # Código-fonte principal
+│   └── test/           # Testes automatizados
+└── target/             
+    └── classes/        # Classes compiladas após build
 ```
 
-- **src/main**: contém os pacotes Java com as implementações da fábrica, produtos e demais componentes.
-- **src/test**: contém as classes responsáveis por validar a correta implementação via testes automatizados.
-- **target/classes**: saída do build do Maven, contendo artefatos compilados.
+- **src/main/**: Contém os pacotes e classes que implementam a lógica do padrão Factory.  
+- **src/test/**: Inclui os casos de testes JUnit que validam a funcionalidade do código principal.  
+- **target/classes/**: Diretório gerado após a compilação, onde ficam os arquivos .class.  
+- **pom.xml**: Arquivo de configuração Maven que define dependências, plugins e configurações de build.
 
 ---
 
 ## 🚀 Instalação e Execução
 
-### Pré-requisitos
+Execute os comandos abaixo para clonar o repositório, compilar e rodar os testes:
 
-- Java 11 ou superior instalado e configurado no PATH.
-- Apache Maven instalado (versão 3.6+ recomendada).
-- Git para clonar o repositório.
+```bash
+# Clonar o repositório
+git clone https://github.com/username/Factory.git
 
-### Passos para Rodar o Projeto
+# Entrar no diretório do projeto
+cd Factory
 
-1. Clone este repositório:
+# Compilar o projeto e rodar os testes com Maven
+mvn clean install
 
-   ```bash
-   git clone https://github.com/usuario/Factory.git
-   cd Factory
-   ```
+# Para compilar e executar diretamente (se existir main)
+mvn compile exec:java
+```
 
-2. Compile e construa o pacote:
-
-   ```bash
-   mvn clean install
-   ```
-
-3. Execute as classes principais (caso exista um main para demonstração):
-
-   ```bash
-   mvn exec:java -Dexec.mainClass="com.exemplo.factory.Main"
-   ```
-
-   *Obs: substituir o pacote e classe principal conforme implementação.*
+Certifique-se de ter o Java 11+ e o Maven instalados e configurados em seu ambiente.
 
 ---
 
-## 🔌 Endpoints
+## ❌ Endpoints
 
-> Este projeto não possui APIs REST, pois é uma biblioteca/conceito de padrão de projeto para uso local.
+> Este projeto não possui endpoints, pois não é uma aplicação web ou API REST.
 
 ---
 
 ## ✅ Testes
 
-### Como rodar os testes
-
-Para executar a suíte de testes automatizados com JUnit, utilize:
+- Utiliza o framework **JUnit 5** para testes unitários.  
+- Os testes estão localizados em `src/test/`.  
+- Estratégia focada em validar as instâncias criadas pela Factory, garantindo que o objeto retornado corresponde ao esperado para cada caso.  
+- Execução dos testes via Maven:
 
 ```bash
 mvn test
 ```
 
-### Estratégia de Testes
-
-- Testes unitários para as fábricas concretas e abstratas, garantindo que objetos apropriados são criados conforme o esperado.
-- Validação das regras de negócio relacionadas à criação de objetos.
-- Cobertura focada nos métodos públicos e principais fluxos de criação.
-
----
-
-## 📦 Deploy
-
-Este projeto é uma biblioteca/conceito local:  
-- Pode ser empacotado como JAR via Maven (`mvn package`).
-- Pode ser integrado em outros projetos Java.
-- Não possui configuração para Docker ou cloud por se tratar de projeto de padrão de projeto.
+- Recomendado integrar com ferramentas de cobertura, como JaCoCo, para melhorar a análise da cobertura de testes.
 
 ---
 
 ## 🔐 Segurança
 
-- O projeto não implementa autenticação ou autorização, pois não é uma aplicação web.
-- Validações internas são feitas para evitar criação inválida ou uso incorreto das fábricas.
-- Recomenda-se uso da biblioteca em ambientes controlados conforme contexto do cliente.
+- Projeto focado em implementação de padrão de design, sem exposição direta a recursos web ou banco de dados.  
+- Não há controles de autenticação ou autorização implementados.  
+- A validação é realizada internamente para garantir que a Factory produza instâncias corretas e não gere objetos inválidos.  
+- Para uso em produção, recomenda-se incorporar práticas de segurança conforme o contexto da aplicação final.
 
 ---
 
-## 🚧 Melhorias Futuras
+## 🚢 Deploy
 
-- Implementar exemplos concretos adicionais para ampliar o escopo do padrão Factory.
-- Criar um módulo separado para Factory abstrata e Factory method para estudo comparativo.
-- Adicionar documentação gerada via Javadoc para facilitar entendimento e uso.
-- Incorporar análise de performance para criação em larga escala (profiling).
-- Desenvolver um projeto de exemplo GUI ou linha de comando para demonstração ao vivo.
-- Automatizar análise estática e geração de relatórios via CI/CD.
+- O projeto utiliza Maven, facilitando o build para distribuição.  
+- Não há container Docker ou automação de deploy configurados nativamente.  
+- Implantação deve ser adaptada conforme o ambiente da aplicação que usar este padrão (por exemplo, integração como biblioteca em sistemas maiores).  
+- Sugestão para futura criação de Dockerfile para containerização e scripts CI/CD.
 
 ---
 
-## 🤝 Contribuição
+## 🔮 Melhorias Futuras
 
-Contribuições são bem-vindas! Para colaborar:
-
-1. Faça um fork deste repositório.
-2. Crie uma branch com a sua feature: `git checkout -b feature/nova-funcionalidade`
-3. Faça commits claros e descritivos.
-4. Envie um pull request explicando suas mudanças.
-5. Aguarde revisão e feedback.
-
-Por favor, siga as boas práticas de codificação Java e escreva testes para qualquer funcionalidade adicionada.
+- Implementar variações do padrão Factory, como Factory Method e Abstract Factory, para ampliar a aplicabilidade.  
+- Adicionar integração contínua (CI) com GitHub Actions para builds automatizados e execução de testes.  
+- Configurar métricas de cobertura e qualidade com JaCoCo e SonarQube.  
+- Gerar documentação Javadoc integrada para facilitar consulta da API.  
+- Disponibilizar exemplos práticos adicionais no diretório `examples/` para uso didático.  
+- Criar Dockerfile e pipeline básico para facilitar deploy e testes em ambiente isolado.  
+- Expandir validações e tratamento de exceções para maior robustez da factory.
 
 ---
 
-## 📄 Licença
+## 👨‍💻 Autor
 
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-> Desenvolvido com boas práticas de engenharia de software para promover aprendizado e aplicação profissional do padrão *Factory* em Java.
+Desenvolvido por **Hítalon Saimon Santos Silva**  
+GitHub: https://github.com/H-Saimon
